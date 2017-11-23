@@ -9,8 +9,9 @@ $grey-0: #f8f9fa;
 
 $blue-5: #329af0;
 
-@import "frame";
-@import "header";
-@import "section";
-@import "content";
-@import "code-highlight";
+@import 'frame';
+@import 'header';
+@import 'footer';
+@import 'section';
+@import 'content';
+@import 'code-highlight';

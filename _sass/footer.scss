@@ -15,6 +15,10 @@
 
   a {
     color: $grey-6;
+
+    &:hover {
+      color: $grey-9;
+    }
   }
 }
 

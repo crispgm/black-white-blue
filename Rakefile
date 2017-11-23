@@ -1,5 +1,5 @@
 task :lint do
-  sh "bundle exec scss-lint assets/ _sass/"
+  sh "bundle exec scss-lint _sass/"
 end
 
 task :serve do

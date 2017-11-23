@@ -1,0 +1,8 @@
+language: ruby
+script:
+  - bundle exec scss-lint _sass
+rvm:
+  - 2.4.0
+notifications:
+  slack: navyblue-team:ioO5diAGc5WUQVDKc5BH1UbE
+  email: false

@@ -1,28 +1,10 @@
 .content {
   font-size: 1rem;
-  padding: 1.6rem;
+  padding: 3.2rem 0 1.6rem;
 }
 
 .content-title {
   font-size: 2.4rem;
   padding-bottom: 2.4rem;
   text-align: center;
-}
-
-.content-title-icon {
-  font-size: 1.6rem;
-}
-
-.content-title-icon {
-  a {
-    color: #fbfbfb;
-  }
-
-  &:hover {
-  	.content-title-icon {
-  	  a {
-        color: #333;
-      }
-    }
-  }
 }

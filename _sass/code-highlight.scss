@@ -1,16 +1,23 @@
+// scss-lint:disable QualifyingElement
+pre,
+code {
+  font-family: "Source Code Pro", Menlo, Consolas, Courier, monospace;
+  hyphens: none;
+}
+
 pre.highlight {
-  border: 1px solid $grey-3;
+  border: 1px solid $grey-9;
   border-radius: 4px;
-  font-family: Menlo, "Source Code Pro", Consolas, Courier;
   font-size: 1rem;
 }
 
 code.hljs {
-  padding: .8rem;
+  padding: .4rem;
 }
 
 code.highlighter-rouge {
-  background-color: #ddd;
-  border-radius: .2rem;
-  padding: .1rem .3rem .1rem .3rem;
+  border: 1px solid $grey-6;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 2px 4px;
 }
