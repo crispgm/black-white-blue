@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 ---
+
 <div class="section intro" id="introduction">
   {% if site.project.logo != '' %}
   <div class="intro-logo">
@@ -60,37 +61,4 @@ layout: default
   <div>
     {{ site.data.project.install | markdownify }}
   </div>
-  <div class="back-top">
-    <a href="#topbar">Back to top</a>
-  </div>
 </div>
-<div class="section content" id="docs">
-  <div class="content-title">
-    <span class="content-title-text">Documentation</span>
-    <span class="content-title-icon">
-      <a href="#guide"><i class="fa fa-paragraph"></i></a>
-    </span>
-  </div>
-  {{ site.data.project.guide | markdownify }}
-  <div class="back-top">
-    <a href="#topbar">Back to top</a>
-  </div>
-</div>
-
-{% include changelog.html %}
-
-<div class="section content" id="contributing">
-  <div class="content-title">
-    <span class="content-title-text">Contributing</span>
-    <span class="content-title-icon">
-      <a href="#contributing"><i class="fa fa-paragraph"></i></a>
-    </span>
-  </div>
-  {{ site.data.project.contrib | markdownify }}
-  <div class="back-top">
-    <a href="#topbar">Back to top</a>
-  </div>
-</div>
-
-{% include disqus_comments.html %}
-{% include google_analytics.html %}
