@@ -1,0 +1,27 @@
+.footer {
+  border-top: solid 1px $grey-3;
+  line-height: 1.5;
+  margin: 2.4rem 0;
+  padding: 1rem 0;
+}
+
+.footer-copyright {
+  font-size: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  float: right;
+
+  a {
+    color: $grey-6;
+  }
+}
+
+.footer-link-icon {
+  margin-right: .4rem;
+
+  &:last-of-type {
+    margin-left: 0;
+  }
+}

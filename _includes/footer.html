@@ -1,3 +1,35 @@
-<footer>
-  Copyright &copy; {{site.time | date: "%Y"}}, <a href="{{ site.project.author_link }}">{{ site.project.author }}</a>.
+<footer class="footer">
+  <div class="footer-links">
+    {% if site.project.email != nil and site.project.email != "" %}
+    <div class="footer-link-icon">
+      <a href="mailto:{{ site.project.email }}">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </div>
+    {% endif %}
+    {% if site.project.repo != nil and site.project.repo != "" %}
+    <div class="footer-link-icon">
+      <a href="https://github.com/{{ site.project.repo }}">
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+    {% endif %}
+    {% if site.project.twitter != nil and site.project.twitter != "" %}
+    <div class="footer-link-icon">
+      <a href="https://twitter.com/{{ site.project.twitter }}">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </div>
+    {% endif %}
+    {% if site.project.medium != nil and site.project.medium != "" %}
+    <div class="footer-link-icon">
+      <a href="https://medium.com/{{ site.project.medium }}">
+        <i class="fa fa-medium"></i>
+      </a>
+    </div>
+    {% endif %}
+  </div>
+  <div class="footer-copyright">
+    Copyright &copy; {{site.time | date: "%Y"}}, <a href="{{ site.project.author_link }}">{{ site.project.author }}</a>.
+  </div>
 </footer>

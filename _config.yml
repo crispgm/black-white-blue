@@ -1,0 +1,22 @@
+baseurl: "/black-white-blue"
+theme: "black-white-blue"
+project:
+  name: "Black White Blue"
+  subtitle: "A simple project page theme for Jekyll."
+  description: |-
+    Black White Blue is a simple project page theme for Jekyll, which is designed to build project pages in a easier way.
+    Black, white and blue are the colors used in the page. White for background, black for text and blue for links.
+  repo: "crispgm/black-white-blue"
+  logo: ""
+  author: "David Zhang"
+  author_link: "https://crispgm.com/"
+  email: crispgm@gmail.com
+  twitter: crispgm
+  medium: "@crispgm"
+highlightjs: true
+exclude:
+  - docs/
+  - README.md
+  - LICENSE
+  - black-white-blue.gemspec
+  - Rakefile
