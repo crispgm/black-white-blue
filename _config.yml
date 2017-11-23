@@ -14,6 +14,7 @@ project:
   twitter: crispgm
   medium: "@crispgm"
 highlightjs: true
+google_analytics: ""
 exclude:
   - docs/
   - README.md

@@ -43,6 +43,9 @@ For a version, simply add an yaml array item:
 - version: "1.0.1"
   changes:
     - text: Performance improved
+      hash: 3325193
+- version: "1.0.1"
+  changes:
     - text: Bugfix
       issue: 12
 - version: "1.0.0"
@@ -52,11 +55,15 @@ For a version, simply add an yaml array item:
 
 Each version comes with multiple changes, and you may present a text with an issue ID. It will generate a link to the GitHub issue specified.
 
-### Disqus
-
-* WIP
-
 ### Google Analytics
+
+Edit `_config.yml` and set your `track_id`:
+
+```
+google_analytics: xx-xxxxx
+```
+
+### Disqus
 
 * WIP
 
