@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: index
 ---
 
 <div class="section intro" id="introduction">
-  {% if site.project.logo != '' %}
+  {% if site.project.logo != nil and site.project.logo != "" %}
   <div class="intro-logo">
     <img src="{{ site.project.logo }}">
   </div>
@@ -18,11 +18,8 @@ layout: page
   </div>
 
   <div class="intro-button">
-    <div class="install-item install-gsm">
-      <a href="#install">Installation</a>
-    </div>
-    <div class="install-item install-user-guide">
-      <a href="#docs">Docs</a>
+    <div class="install-item">
+      <a href="{{ site.baseurl }}/docs.html#getting-started">Getting Started</a>
     </div>
   </div>
 
@@ -48,17 +45,5 @@ layout: page
        data-count-aria-label="# forks on GitHub"
        aria-label="Fork {{ site.project.repo }} on GitHub">Fork
     </a>
-  </div>
-</div>
-
-<div class="section content" id="install">
-  <div class="content-title">
-    <span class="content-title-text">Installation</span>
-    <span class="content-title-icon">
-      <a href="#install"><i class="fa fa-paragraph"></i></a>
-    </span>
-  </div>
-  <div>
-    {{ site.data.project.install | markdownify }}
   </div>
 </div>
