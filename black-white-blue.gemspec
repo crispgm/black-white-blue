@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors  = ["David Zhang"]
   spec.email    = ["crispgm@gmail.com"]
 
-  spec.summary  = %q{A simple project page theme for Jekyll.}
+  spec.summary  = %q{A simple data-driven project page theme for Jekyll.}
   spec.homepage = "https://github.com/crispgm/black-white-blue"
   spec.license  = "MIT"
 
@@ -20,4 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "scss_lint"
 end
