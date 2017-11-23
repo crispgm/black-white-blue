@@ -17,18 +17,7 @@
 }
 
 @media (max-width: 48rem) {
-  .title {
-    margin-top: 2rem;
-    text-align: center;
-  }
-
-  .menu {
-    display: flex;
-    float: none;
-    justify-content: space-around;
-  }
-
   .menu-item {
-    padding: 0;
+    padding-left: .4rem;
   }
 }

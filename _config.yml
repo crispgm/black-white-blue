@@ -2,7 +2,7 @@ baseurl: "/black-white-blue"
 theme: "black-white-blue"
 project:
   name: "Black White Blue"
-  subtitle: "A simple project page theme for Jekyll."
+  subtitle: "A simple and minimal project page theme for Jekyll."
   description: |-
     Black White Blue is a simple project page theme for Jekyll, which is designed to build project pages in a easier way.
     Black, white and blue are the colors used in the page. White for background, black for text and blue for links.
