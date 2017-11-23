@@ -1,50 +1,56 @@
 ---
 layout: default
 ---
-<div id="intro">
+<div class="section intro" id="introduction">
   {% if site.project.logo != '' %}
-  <div id="intro-logo">
+  <div class="intro-logo">
     <img src="{{ site.project.logo }}">
   </div>
   {% endif %}
-  <div id="intro-text">
+
+  <div class="intro-text">
     {{ site.project.subtitle }}
   </div>
-  <div id="intro-desc">
+
+  <div class="intro-desc">
     {{ site.project.description }}
   </div>
-  <div id="intro-button">
+
+  <div class="intro-button">
     <div class="install-item install-gsm">
       <a href="#install">Installation</a>
     </div>
     <div class="install-item install-user-guide">
-      <a href="#guide">User Guide</a>
+      <a href="#docs">Docs</a>
     </div>
   </div>
-  <div id="intro-version">
+
+  <div class="intro-version">
     <span>Version <a href="#changelog">{{ site.data.changelog[0].version }}</a> ·</span>
     <span>Created by <a href="{{ site.project.author_link }}">{{ site.project.author }}</a></span>
   </div>
+
+  <div class="social">
+    <a class="github-button"
+       href="https://github.com/{{ site.project.repo }}"
+       data-icon="octicon-star"
+       data-count-href="/{{ site.project.repo }}/stargazers"
+       data-count-api="/repos/{{ site.project.repo }}#stargazers_count"
+       data-count-aria-label="# stargazers on GitHub"
+       aria-label="Star {{ site.project.repo }} on GitHub">Star
+     </a>
+    <a class="github-button"
+       href="https://github.com/{{ site.project.repo }}/fork"
+       data-icon="octicon-repo-forked"
+       data-count-href="/{{ site.project.repo }}/network"
+       data-count-api="/repos/{{ site.project.repo }}#forks_count"
+       data-count-aria-label="# forks on GitHub"
+       aria-label="Fork {{ site.project.repo }} on GitHub">Fork
+    </a>
+  </div>
 </div>
-<div id="social">
-  <a class="github-button"
-     href="https://github.com/{{ site.project.repo }}"
-     data-icon="octicon-star"
-     data-count-href="/{{ site.project.repo }}/stargazers"
-     data-count-api="/repos/{{ site.project.repo }}#stargazers_count"
-     data-count-aria-label="# stargazers on GitHub"
-     aria-label="Star {{ site.project.repo }} on GitHub">Star
-   </a>
-  <a class="github-button"
-     href="https://github.com/{{ site.project.repo }}/fork"
-     data-icon="octicon-repo-forked"
-     data-count-href="/{{ site.project.repo }}/network"
-     data-count-api="/repos/{{ site.project.repo }}#forks_count"
-     data-count-aria-label="# forks on GitHub"
-     aria-label="Fork {{ site.project.repo }} on GitHub">Fork
-   </a>
-</div>
-<div id="install"  class="content">
+
+<div class="section content" id="install">
   <div class="content-title">
     <span class="content-title-text">Installation</span>
     <span class="content-title-icon">
@@ -52,60 +58,39 @@ layout: default
     </span>
   </div>
   <div>
-    {{ site.data.index.install | markdownify }}
+    {{ site.data.project.install | markdownify }}
   </div>
   <div class="back-top">
     <a href="#topbar">Back to top</a>
   </div>
 </div>
-<div id="guide" class="content">
+<div class="section content" id="docs">
   <div class="content-title">
-    <span class="content-title-text">User Guide</span>
+    <span class="content-title-text">Documentation</span>
     <span class="content-title-icon">
       <a href="#guide"><i class="fa fa-paragraph"></i></a>
     </span>
   </div>
-  {{ site.data.index.guide | markdownify }}
+  {{ site.data.project.guide | markdownify }}
   <div class="back-top">
     <a href="#topbar">Back to top</a>
   </div>
 </div>
-<div id="changelog" class="content">
-  <div class="content-title">
-    <span class="content-title-text">Changelog</span>
-    <span class="content-title-icon">
-      <a href="#changelog"><i class="fa fa-paragraph"></i></a>
-    </span>
-  </div>
-  {% for change in site.data.changelog %}
-    <h3>Version {{ change.version }}</h3>
-    <ul>
-      {% for log in change.changes %}
-        <li>
-          {{ log.text }}
-          {% if log.issue != nil %}
-            <a href="https://github.com/{{ site.project.repo }}/issues/{{ log.issue }}">#{{ log.issue }}</a></li>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
-  {% endfor %}
-  <div class="back-top">
-    <a href="#topbar">Back to top</a>
-  </div>
-</div>
-<div id="contributing" class="content">
+
+{% include changelog.html %}
+
+<div class="section content" id="contributing">
   <div class="content-title">
     <span class="content-title-text">Contributing</span>
     <span class="content-title-icon">
       <a href="#contributing"><i class="fa fa-paragraph"></i></a>
     </span>
   </div>
-  {{ site.data.index.contrib | markdownify }}
+  {{ site.data.project.contrib | markdownify }}
   <div class="back-top">
     <a href="#topbar">Back to top</a>
   </div>
 </div>
-<div id="disqus" class="content">
-  {% include disqus_comments.html %}
-</div>
+
+{% include disqus_comments.html %}
+{% include google_analytics.html %}
