@@ -1,6 +1,6 @@
 # Black White Blue
 
-![](https://travis-ci.org/crispgm/black-white-blue.com.svg)
+![](https://travis-ci.org/crispgm/black-white-blue.svg)
 [![Gem Version](https://badge.fury.io/rb/black-white-blue.svg)](https://badge.fury.io/rb/black-white-blue)
 
 Black White Blue is a simple project page theme for Jekyll, which is designed to build project pages in a easier way.
