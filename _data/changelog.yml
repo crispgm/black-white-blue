@@ -1,7 +1,7 @@
 - version: "1.0.0"
   changes:
-    - text: "This initial version is an example, others will be real changelog for BWB"
-    - text: "Ref commit hash"
-      hash: 7740653
-    - text: "Ref issues"
+    - text: "Initial version"
+    - text: "Ref issues for test"
       issue: 1
+    - text: "Release to RubyGems"
+      hash: 1c7aad4

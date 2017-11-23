@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors  = ["David Zhang"]
   spec.email    = ["crispgm@gmail.com"]
 
-  spec.summary  = %q{A simple data-driven project page theme for Jekyll.}
+  spec.summary  = %q{A simple and minimal project page theme for Jekyll.}
   spec.homepage = "https://github.com/crispgm/black-white-blue"
   spec.license  = "MIT"
 
