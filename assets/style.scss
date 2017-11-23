@@ -1,0 +1,16 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "black-white-blue";
+
+.social {
+  text-align: center;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}

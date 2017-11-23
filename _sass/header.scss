@@ -1,0 +1,34 @@
+.topbar {
+  height: 3rem;
+  margin-top: .8rem;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  float: right;
+}
+
+.menu-item {
+  padding-left: .8rem;
+}
+
+@media (max-width: 48rem) {
+  .title {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .menu {
+    display: flex;
+    float: none;
+    justify-content: space-around;
+  }
+
+  .menu-item {
+    padding: 0;
+  }
+}

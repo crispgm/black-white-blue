@@ -1,0 +1,84 @@
+.section {
+  border-bottom: solid 1px $grey-3;
+  margin-bottom: 2.4rem;
+  padding-bottom: 3.2rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.back-top {
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro-logo {
+  text-align: center;
+
+  img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+.intro-text {
+  font-size: 2rem;
+  margin: 4.8rem 0;
+}
+
+.intro-desc {
+  color: $grey-6;
+  margin: 2.4rem 0;
+}
+
+.intro-button {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.install-item {
+  border: .1rem solid $grey-9;
+  border-radius: 8px;
+  color: $grey-9;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: .2rem 1.6rem;
+  margin-right: .8rem;
+
+  a {
+    color: $grey-9;
+  }
+
+  &:hover {
+    border-color: $blue-5;
+
+    a {
+      color: $blue-5;
+      text-decoration: none;
+    }
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.intro-version {
+  margin: 2rem;
+}
+
+@media (max-width: 48rem) {
+  .intro-button {
+    margin-top: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    margin-top: 3rem;
+  }
+}

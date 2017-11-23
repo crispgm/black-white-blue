@@ -1,0 +1,16 @@
+pre.highlight {
+  border: 1px solid $grey-3;
+  border-radius: 4px;
+  font-family: Menlo, "Source Code Pro", Consolas, Courier;
+  font-size: 1rem;
+}
+
+code.hljs {
+  padding: .8rem;
+}
+
+code.highlighter-rouge {
+  background-color: #ddd;
+  border-radius: .2rem;
+  padding: .1rem .3rem .1rem .3rem;
+}
