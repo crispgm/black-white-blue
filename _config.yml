@@ -1,5 +1,5 @@
 baseurl: "/black-white-blue"
-theme: "black-white-blue"
+# theme: "black-white-blue" # bwb is not white listed theme of GitHub Pages, you may enable in other ways
 project:
   name: "Black White Blue"
   subtitle: "A simple and minimal project page theme for Jekyll."
