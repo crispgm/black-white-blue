@@ -1,3 +1,7 @@
+- version: "1.0.1"
+  changes:
+    - text: "Optimize logo's location"
+      hash: 0990be9
 - version: "1.0.0"
   changes:
     - text: "Initial version"

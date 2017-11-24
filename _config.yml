@@ -7,7 +7,7 @@ project:
     Black White Blue is a simple project page theme for Jekyll, which is designed to build project pages in a easier way.
     Black, white and blue are the colors used in the page. White for background, black for text and blue for links.
   repo: "crispgm/black-white-blue"
-  logo: ""
+  logo: "/black-white-blue/assets/logo.png"
   author: "David Zhang"
   author_link: "https://crispgm.com/"
   email: crispgm@gmail.com
