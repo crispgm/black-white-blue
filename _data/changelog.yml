@@ -1,3 +1,7 @@
+- version: "1.0.2"
+  changes:
+    - text: "Add full options in docs"
+      issue: 3
 - version: "1.0.1"
   changes:
     - text: "Optimize logo's location"
@@ -5,7 +9,3 @@
 - version: "1.0.0"
   changes:
     - text: "Initial version"
-    - text: "Ref issues for test"
-      issue: 1
-    - text: "Release to RubyGems"
-      hash: 1c7aad4
