@@ -31,7 +31,7 @@ $ bundle install
 
 ### Project Metadata
 
-Project metadata are defined in `_config.yml`:
+Project metadata are defined in `_config.yml` as follows:
 
 ```yaml
 project:
@@ -49,7 +49,9 @@ project:
   medium: "@crispgm"
 ```
 
-Email/Twitter/Medium is optional, which will be shown as icons on the bottom right.
+Project's name/subtitle/description/repo/author/author_link are required. And you may present with a well-designed logo.
+
+Email/Twitter/Medium are optional, which will be shown as icons on the bottom right.
 
 ### Changelog
 
