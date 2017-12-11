@@ -5,7 +5,7 @@ title: Documentation
 
 Black White Blue is a simple and minimal project page theme for Jekyll, which is designed to build project pages in an easier way.
 
-Black, white and blue are the colors used in the page. White for background, black for text and blue for links.
+Black, white and blue are the main colors used in the page. White for background, black for text and blue for links.
 
 ## Installation
 
@@ -31,7 +31,7 @@ $ bundle install
 
 ### Project Metadata
 
-Project metadata is defined in `_config.yml`:
+Project metadata are defined in `_config.yml`:
 
 ```yaml
 project:
@@ -55,7 +55,7 @@ Email/Twitter/Medium is optional, which will be shown as icons on the bottom rig
 
 Changelog is maintained in `_data/changelog.yml`.
 
-For a version, simply add an yaml array item:
+To "release" a new version, simply add a structured item in the YAML:
 
 ```yaml
 - version: "1.0.1"
@@ -71,7 +71,7 @@ For a version, simply add an yaml array item:
     - text: "Initial version"
 ```
 
-Each version comes with multiple changes, and you may present a text with an issue ID. It will generate a link to the GitHub issue specified.
+Each version comes with multiple changes, and you may present a text with an GitHub issue ID or a commit hash. It will be generated into links to the GitHub issues or commits specified.
 
 ### Google Analytics
 
@@ -90,7 +90,7 @@ disqus:
   shortname: your-short-name
 ```
 
-Then, enable Disqus in pages by adding frontmatter:
+Then, enable Disqus in pages by adding a frontmatter `comments`:
 
 ```yaml
 ---
