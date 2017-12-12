@@ -1,3 +1,7 @@
+- version: "1.0.4"
+  changes:
+    - text: "Make changelog a layout"
+      issue: 4
 - version: "1.0.3"
   changes:
     - text: "Bugfix: fix link of the newest version to changelog"

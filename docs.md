@@ -55,6 +55,8 @@ Email/Twitter/Medium are optional, which will be shown as icons on the bottom ri
 
 ### Changelog
 
+It is very easy to enable changelog. Set `layout: changelog` in any HTML and it is enabled.
+
 Changelog is maintained in `_data/changelog.yml`.
 
 To "release" a new version, simply add a structured item in the YAML:

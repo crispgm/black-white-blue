@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name     = "black-white-blue"
-  spec.version  = "1.0.3"
+  spec.version  = "1.0.4"
   spec.authors  = ["David Zhang"]
   spec.email    = ["crispgm@gmail.com"]
 
