@@ -1,3 +1,7 @@
+- version: "1.0.5"
+  changes:
+    - text: "Add testimonial module"
+      issue: 5
 - version: "1.0.4"
   changes:
     - text: "Make changelog a layout"

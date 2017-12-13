@@ -77,6 +77,29 @@ To "release" a new version, simply add a structured item in the YAML:
 
 Each version comes with multiple changes, and you may present a text with an GitHub issue ID or a commit hash. It will be generated into links to the GitHub issues or commits specified.
 
+### Testimonials
+
+Testimonials module has been released since `1.0.5`, which works like a changelog.
+
+To show testimonials, first include testimonials module in any place you'd like to show it.
+
+```
+<!-- your html codes above -->
+
+{% include testimonial.html %}
+
+<!-- your html codes below -->
+```
+
+Then add testimonials by editing `review.yml`:
+
+```yaml
+- author: John Smith
+  link: https://example.com/
+  title: Creator of Your Awesome Project
+  comment: It works!
+```
+
 ### Google Analytics
 
 Edit `_config.yml` and set your `track_id`:

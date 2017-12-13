@@ -1,0 +1,24 @@
+<div class="review" id="testimonial">
+  <div class="review-header">
+    Testimonials
+  </div>
+  <div class="review-body">
+  {% for review in site.data.review %}
+    <div class="review-item">
+      <div class="review-comment">
+        {{ review.comment }}
+      </div>
+      <div class="review-author">
+        {% if review.link != '' %}
+        <a href="{{ review.link }}">{{ review.author }}</a>
+        {% else %}
+        {{ review.author }}
+        {% endif %}
+      </div>
+      <div class="review-title">
+        {{ review.title }}
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+</div>
