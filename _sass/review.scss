@@ -1,0 +1,45 @@
+.review {
+  margin: 3.2rem 0 0;
+}
+
+.review-header {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.review-item {
+  margin: 3rem 0;
+  overflow: hidden;
+}
+
+.review-comment {
+  font-size: 1.2rem;
+  padding: 2rem 0;
+  text-align: left;
+}
+
+.review-author {
+  text-align: right;
+}
+
+.review-title {
+  color: $grey-6;
+  font-weight: normal;
+  padding-top: .4rem;
+  text-align: right;
+}
+
+@media (max-width: 48rem) {
+  .review-comment {
+    padding: 0 1rem;
+  }
+
+  .review-author {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .review-title {
+    text-align: center;
+  }
+}
