@@ -25,7 +25,11 @@ Then execute:
 
 ```
 $ bundle install
-```    
+```
+
+## Usecase
+
+* [Caravan](https://crispgm.github.io/caravan/)
 
 ## Usage
 
